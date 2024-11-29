@@ -35,14 +35,6 @@
         import { getDatabase, ref, push, set, onChildAdded, remove, onChildRemoved }
             from "https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js";
         // Your web app's Firebase configuration
-        const firebaseConfig = {
-                apiKey: "AIzaSyDyx6baItzMfXmhyvdBD16Yubye1q_DAHg",
-                authDomain: "dev28-570e8.firebaseapp.com",
-                projectId: "dev28-570e8",
-                storageBucket: "dev28-570e8.firebasestorage.app",
-                messagingSenderId: "591915635338",
-                appId: "1:591915635338:web:ec7d6a14c9a84b63f29373"
-            };
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app); //RealtimeDBに接続
         const dbRef = ref(db, "chat"); //RealtimeDB内の"chat"を使う
